@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@plugin "./hero.ts";
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+
+@theme {
+  --color-header: #212428;
+  --color-sidebar: #efefef;
+  --color-primary: #00DA26;
+}
+
+@layer base {
+  :root {
+    --header-height: 80px;
+    --active-gradient: linear-gradient(
+      135deg,
+      rgba(32, 233, 255, 0.5) 0%,
+      rgba(114, 255, 78, 0.7) 50%,
+      rgba(0, 210, 166, 0.9) 100%
+    );
+  }
+}
