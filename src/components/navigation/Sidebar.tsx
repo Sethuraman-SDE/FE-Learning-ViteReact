@@ -31,7 +31,7 @@ const Sidebar = () => {
               `px-3 py-2 rounded-lg font-medium transition-all duration-300 flex items-center gap-2
               ${
                 isActive
-                  ? "bg-[image:var(--active-gradient)] text-lg hover:shadow-md font-semibold!"
+                  ? "bg-(image:--active-gradient) text-lg hover:shadow-md font-semibold!"
                   : "text-black hover:bg-gray-300"
               }`
             }
